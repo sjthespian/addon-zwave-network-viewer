@@ -8,8 +8,5 @@ CONFIG_PATH=/data/options.json
 export HA_TOKEN=${SUPERVISOR_TOKEN}
 export HA_URL="http://supervisor/core"
 
-# Port 
-PORT=6123
-
 bashio::log.info "Start HA Z-Wave Network Viewer"
 python3 webserver.py
