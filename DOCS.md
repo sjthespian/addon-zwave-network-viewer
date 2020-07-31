@@ -11,27 +11,13 @@ Follow these steps to get the add-on installed on your system:
 
 ## How to use
 
-1. Generate a long-lived access token
-1. In the Z-Wave Network Viewer add-on configuration, perform the following:
-    - Add the above token 
-2. Click the **Start** button to start the add-on.
-3. Check the Log tab to insure the add-on started and is communicating to your MQTT broker.
+1. Click the **Start** button to start the add-on.
+2. Check the Log tab to insure the add-on started.
+3. Click on the "Open Web UI" link to access the web interface.
 
 ## Configuration
 
-```yaml
-token: ""
-```
-
-#### Option `token`
-
-Long-lived Home Assistant access token
-
-For example:
-
-```yaml
-token: 1234567890
-```
+No configuration required
 
 ## Known issues and limitations
 
