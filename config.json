@@ -1,0 +1,21 @@
+{
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "boot": "auto",
+  "description": "Visualization tool for the Z-Wave network",
+  "homeassistant_api": true,
+  "name": "Z-Wave Network Viewer",
+  "options": {},
+  "ports": {
+    "6123/tcp": 6123
+  },
+  "ports_description": {
+    "6123/tcp": "Web interface for the network viewer"
+  },
+  "schema": {},
+  "slug": "zwavenetworkviewer",
+  "stage": "experimental",
+  "startup": "services",
+  "url": "https://github.com/sjthespian/addon-zwave-network-viewer",
+  "version": "0.1",
+  "webui": "http://[HOST]:[PORT:6123]"
+}
