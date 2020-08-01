@@ -25,6 +25,24 @@ An addon for the [Z-Wave Network Viewer][zwave-network-viewer] application. It i
 
 For more information about the Z-Wave Network Viewer and how to use it, please see the [Z-Wave Network Vieweer][zwave-network-viewer]
 
+## Known issues and limitations
+
+- The JSON link will not currently work due to an issue with how ingress support is implemented. For now, change the port number to 6123 and change https to http if you are running with SSL to download the JSON file.
+
+## Changelog & Releases
+
+This repository keeps a change log using [GitHub's releases][releases]
+functionality. The format of the log is based on
+[Keep a Changelog][keepchangelog].
+
+Releases are based on [Semantic Versioning][semver], and use the format
+of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+based on the following:
+
+- ``MAJOR``: Incompatible or major changes.
+- ``MINOR``: Backwards-compatible new features and enhancements.
+- ``PATCH``: Backwards-compatible bugfixes and package updates.
+
 ## Support
 
 Got questions?
@@ -108,5 +126,7 @@ SOFTWARE.
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/sjthespian/addon-zwave-network-viewer.svg
 [releases]: https://github.com/sjthespian/addon-zwave-network-viewer/releases
+[keepchangelog]: http://keepachangelog.com/en/1.0.0/
+[semver]: http://semver.org/spec/v2.0.0.htm
 [repository]: https://github.com/sjthespian/repository
 [zwave-network-viewer]: https://github.com/elad-bar/ha-zwave-network
