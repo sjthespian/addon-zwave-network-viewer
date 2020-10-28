@@ -11,6 +11,9 @@
   "ports": {
     "6123/tcp": 6123
   },
+  "ports_description": {
+    "6132/tcp": "Web interface Z-Wave Network Viewer"
+  },
   "schema": {},
   "slug": "zwavenetworkviewer",
   "stage": "experimental",

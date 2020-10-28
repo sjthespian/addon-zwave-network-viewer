@@ -18,7 +18,7 @@ RUN apk add --no-cache \
     # ha-zwave-network
     && git clone --depth=1 https://github.com/elad-bar/ha-zwave-network.git \
     && cd ha-zwave-network \ 
-    && pip install --no-cache-dir requests \
+    && pip install --no-cache-dir requests flask aiofiles asyncws \
     && mkdir -p /web \
     && find . -print | sed '/.git|Dockerfile/d' | cpio -pvdm / \
     && apk del .build-deps \

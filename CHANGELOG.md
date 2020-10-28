@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3] - 2020-10-27
+- Added missing python modules for latest Z-Wave Network Viewer
 ## [0.2] - 2020-07-31
 ### Added
 - Ingress support
