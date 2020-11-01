@@ -15,15 +15,17 @@ RUN apk add --no-cache \
 	build-base \
 	python3-dev \
         git \
+        libffi-dev openssl-dev \
     # ha-zwave-network
     && git clone --depth=1 https://github.com/elad-bar/ha-zwave-network.git \
     && cd ha-zwave-network \ 
-    && pip install --no-cache-dir requests flask aiofiles asyncws \
+    && pip install --no-cache-dir requests asyncws aiofiles flask pyopenssl \
     && mkdir -p /web \
     && find . -print | sed '/.git|Dockerfile/d' | cpio -pvdm / \
     && apk del .build-deps \
     && cd .. \
-    && rm -rf /usr/src/ha-zwave-network.git
+    && rm -rf /usr/src/ha-zwave-network.git \
+    && mkdir /debug
 
 COPY data/run.sh /
 

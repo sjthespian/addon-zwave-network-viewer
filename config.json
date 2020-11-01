@@ -3,10 +3,18 @@
   "boot": "auto",
   "description": "Visualization tool for the Z-Wave network",
   "homeassistant_api": true,
-  "ingress": true,
+  "ingress": false,
   "ingress_port": 6123,
+  "map": ["ssl"],
   "name": "Z-Wave Network Viewer",
-  "options": {},
+  "options": {
+    "haurl": "https://homeassistant.local.hass.io:8123",
+    "token": "",
+    "ssl": false,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem",
+    "debug": false
+  },
   "panel_icon": "mdi:z-wave",
   "ports": {
     "6123/tcp": 6123
@@ -14,11 +22,18 @@
   "ports_description": {
     "6132/tcp": "Web interface Z-Wave Network Viewer"
   },
-  "schema": {},
+  "schema": {
+    "haurl": "url",
+    "token": "password",
+    "ssl": "bool",
+    "certfile": "str",
+    "keyfile": "str",
+    "debug": "bool"
+  },
   "slug": "zwavenetworkviewer",
   "stage": "experimental",
   "startup": "services",
   "url": "https://github.com/sjthespian/addon-zwave-network-viewer",
-  "version": "0.2",
+  "version": "0.3",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:6123]"
 }

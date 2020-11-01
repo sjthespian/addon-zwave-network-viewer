@@ -23,7 +23,9 @@ An addon for the [Z-Wave Network Viewer][zwave-network-viewer] application. It i
 
 ## About
 
-For more information about the Z-Wave Network Viewer and how to use it, please see the [Z-Wave Network Vieweer][zwave-network-viewer]
+For more information about the Z-Wave Network Viewer and how to use it, please see the [Z-Wave Network Vieweer][zwave-network-viewer]. The viewer will be available at http[s]://<your home assistant server name or ip>:6123/ by default. You can change the port number in the configuration.
+
+***NOTE: Unlike earlier versions of this addon, it now requires configuration due to changes in the [Z-Wave Network Vieweer][zwave-network-viewer] itself. See the [documentation](DOCS.md) for more information.***
 
 ## Known issues and limitations
 
