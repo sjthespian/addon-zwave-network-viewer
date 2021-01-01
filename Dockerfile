@@ -11,6 +11,7 @@ RUN apk add --no-cache \
         python3 \
 	py3-pip \
 	musl \
+        libssl1.1 libcrypto1.1 \
     && apk add --no-cache --virtual .build-deps \
 	build-base \
 	python3-dev \

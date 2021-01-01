@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4] - 2020-12-31
+### Changed
+- Upgraded to base image 8.0.6 to fix incompability between libssl/libcrypto and openssl-dev versions. Also force install of all three packages to get latest verion.
+
 ## [0.3] - 2020-10-27
 ### Added
 - Added missing python modules for latest Z-Wave Network Viewer [\#1](https://github.com/sjthespian/addon-zwave-network-viewer/issues/1)
